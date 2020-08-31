@@ -41,4 +41,7 @@ def post_edit(request, pk):
 		form = PostForm(instance=post)
 	return render(request, 'blog/post_edit.html', {'form': form})	
 
+def cv(request):
+	return render(request,'blog/cv.html')
+
 # Create your views here.
